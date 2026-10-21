@@ -20,7 +20,7 @@ Umami analytics is used to track website stats. The tracking script is injected 
 
 Source branch: `preview/mriya-step-01`, based on production commit `0426572`.
 The production `main` branch and custom domain are not changed.
-Public preview: https://88Group.github.io/shifo-preview/
+Public preview: https://halimhamidov.github.io/shifo-preview/
 Only static website files are mirrored into the public preview repository.
 Server functions, Workers, configuration, and private repository history are excluded.
 The preview disables CRM submissions and Bitrix chat and requests no indexing.
