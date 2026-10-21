@@ -55,3 +55,12 @@ rotation remains unchanged. Arrow controls pause rotation for manual browsing;
 the play control resumes it. Reduced-motion preferences pause it initially.
 All slides share the original hero's fixed visual space. Files and generation
 prompts are documented in `docs/BANNER_ASSETS.md`.
+
+### Step 3: lighter second screen
+
+The territory screen uses a lighter full-height blue-grey text panel and locally
+hosted open fonts (Manrope and Cormorant Garamond, with OFL licenses) to match the
+reference's light typography and large thin numerals. The second fact is now
+**27 cottage rooms**, as confirmed by the owner, replacing the distance figure.
+Map buttons and place markers are temporarily removed. The first hero and its
+slides are unaffected. Desktop and mobile layouts are verified before publishing.
