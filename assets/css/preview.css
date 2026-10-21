@@ -51,8 +51,9 @@
   position: absolute;
   inset: 0 0 0 50%;
   padding: clamp(48px, 5.35vw, 100px) clamp(32px, 6vw, 110px) 58px;
-  background: linear-gradient(180deg, rgba(60, 104, 121, .94), rgba(87, 119, 132, .94) 55%, rgba(174, 174, 165, .84));
-  backdrop-filter: blur(18px);
+  background: linear-gradient(180deg, rgba(7, 29, 34, .4), rgba(7, 29, 34, .12));
+  backdrop-filter: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .85);
 }
 .territory-summary h2 {
   margin: 0 0 32px;
@@ -71,6 +72,22 @@
 .territory-facts > div { display: flex; min-width: 0; flex-direction: column; }
 .territory-facts dt { order: 1; padding-top: 7px; border-top: 1px solid rgba(255,255,255,.48); font: 300 clamp(13px, 1vw, 18px)/1.4 'Shifo Manrope', Arial, sans-serif; letter-spacing: -.02em; text-transform: uppercase; }
 .territory-facts dd { margin: 0 0 4px; font: 300 clamp(48px, 4.375vw, 84px)/1 'Shifo Cormorant', Georgia, serif; font-variant-numeric: lining-nums; letter-spacing: -.02em; white-space: nowrap; }
+.territory-open-map {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  color: #fff;
+  background: rgba(7, 29, 34, .82);
+  border: 1px solid rgba(255, 255, 255, .45);
+  font: 400 14px/1.4 'Shifo Manrope', Arial, sans-serif;
+}
+.territory-open-map:hover { background: #123e48; }
+.territory-open-map:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 
 @media (max-width: 1100px) {
   .territory-summary { left: 43%; padding: 38px 30px; }
@@ -81,7 +98,8 @@
   .territory-overview { height: auto; overflow: visible; padding: 0; }
   .territory-map { position: relative; inset: auto; z-index: 0; }
   .territory-map img { display: block; width: 100%; height: auto; object-fit: contain; }
-  .territory-summary { position: relative; inset: auto; padding: 30px 24px; background: linear-gradient(155deg, #436f80, #607b86); backdrop-filter: none; }
+  .territory-summary { position: relative; inset: auto; padding: 30px 24px; background: linear-gradient(rgba(7, 29, 34, .48), rgba(7, 29, 34, .48)), url('../../img/maps/yandex-map-2.png') center / cover; backdrop-filter: none; }
+  .territory-open-map { top: 14px; left: 14px; }
   .territory-summary h2 { font-size: 20px; margin-bottom: 22px; }
   .territory-summary > p { font-size: 18px; }
   .territory-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 30px; margin-top: 28px; }

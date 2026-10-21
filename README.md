@@ -64,3 +64,9 @@ reference's light typography and large thin numerals. The second fact is now
 **27 cottage rooms**, as confirmed by the owner, replacing the distance figure.
 Map buttons and place markers are temporarily removed. The first hero and its
 slides are unaffected. Desktop and mobile layouts are verified before publishing.
+
+### Step 4: transparent map panel
+
+The right-hand panel now uses a transparent tint without blur, so the territory
+map remains visible below the text. The full-map button opens the original image
+in a separate tab. Mobile text also overlays the map; place markers remain hidden.
