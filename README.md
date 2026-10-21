@@ -108,3 +108,5 @@ original proportions and opens at full size when selected, including on phones.
 The homepage procedure infographic spans the full page width at its original aspect ratio. Its embedded heading is the only visible heading for this block; the source PNG is unchanged.
 
 Territory section: emerald landscape panel with cream/gold statistics, 34/66 desktop columns, information first on mobile. The annotated map PNG is unchanged and opens at full size by clicking/tapping it. The separate plan button is removed. Background is a lightweight WebP export of the existing banner landscape.
+
+The updated procedure PNG fits within the viewport below the fixed header, preserving its full aspect ratio and original file bytes. Natural green CSS gradients fill any side space; tapping the infographic opens the original.

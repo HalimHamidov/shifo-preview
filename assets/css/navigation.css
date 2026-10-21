@@ -11,10 +11,13 @@
 .page-intro { padding-block: 32px 12px; }
 .page-intro > a { color: #386b75; font-size: 14px; }
 .page-intro h1 { margin: 18px 0 0; color: #103c42; font: 400 clamp(30px, 3vw, 48px)/1.2 'Shifo Manrope', Arial, sans-serif; }
-.procedure-overview { padding: 0; background: #f8f7f2; }
+.procedure-overview { padding: 0; background: radial-gradient(ellipse at 15% 0, #c7dcc0, transparent 48%), radial-gradient(ellipse at 85% 100%, #628c49, transparent 55%), linear-gradient(180deg, #e5eee0, #164e35); scroll-margin-top: -18px; }
 .procedure-overview a { color: #103c42; }
-.procedure-overview .procedure-collage { display: block; width: 100%; line-height: 0; }
-.procedure-collage img { display: block; width: 100%; height: auto; }
+.procedure-overview .procedure-collage { display: flex; justify-content: center; width: 100%; line-height: 0; }
+.procedure-collage img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100svh - var(--actual-header-height, 75px)); object-fit: contain; }
+@media (max-width: 700px) {
+  .procedure-collage img { max-height: calc(100svh - var(--actual-header-height, 75px) - 72px); }
+}
 .social-overview { padding-block: 0 48px; background: #f8f7f2; }
 .social-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .social-links > a { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 24px 28px; min-height: 92px; color: #fff; }
