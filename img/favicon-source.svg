@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Shifo sun bird wave icon">
+  <defs>
+    <radialGradient id="sun" cx="42%" cy="32%" r="68%">
+      <stop offset="0" stop-color="#fff3c2"/>
+      <stop offset="0.46" stop-color="#ffd56a"/>
+      <stop offset="1" stop-color="#f2a82f"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="110" y1="275" x2="472" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fd3f4"/>
+      <stop offset="0.48" stop-color="#53bdea"/>
+      <stop offset="1" stop-color="#8edcf4"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0e4f5c" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#fcfaf7"/>
+  <g transform="translate(256 256) scale(1.18) translate(-256 -256)">
+    <circle cx="256" cy="216" r="156" fill="url(#sun)" filter="url(#softShadow)"/>
+    <path d="M108 231C157 191 210 191 247 230C281 154 382 171 430 190C366 181 299 190 264 253L239 276C209 231 162 224 108 231Z" fill="#111316"/>
+    <path d="M246 231L267 255L239 276Z" fill="#fcfaf7"/>
+    <path d="M160 326C220 276 284 287 327 333C352 359 393 357 466 306C417 381 332 407 271 352C238 322 201 310 160 326Z" fill="url(#wave)" opacity=".95"/>
+    <path d="M256 305C303 254 378 284 465 325C386 316 326 304 307 339C296 359 280 356 256 305Z" fill="#ffffff" opacity=".92"/>
+    <path d="M118 337C175 303 230 311 274 353C303 381 344 382 406 350" fill="none" stroke="#8edcf4" stroke-width="28" stroke-linecap="round" opacity=".75"/>
+  </g>
+</svg>

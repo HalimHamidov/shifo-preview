@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" fill="none">
+  <defs>
+    <symbol id="drop" viewBox="-20 -76 40 94">
+      <path d="M0-74C20-45 20-14 0 18-20-14-20-45 0-74Z" fill="#D6B25E" fill-opacity=".18" stroke="#F8F5EE" stroke-opacity=".14" stroke-width="2"/>
+      <path d="M0-54C10-34 10-12 0 4-10-12-10-34 0-54Z" fill="#8CB8D9" fill-opacity=".18"/>
+    </symbol>
+    <symbol id="seal" viewBox="-132 -132 264 264">
+      <circle r="126" fill="#2E4E73" fill-opacity=".14"/>
+      <circle r="106" stroke="#F8F5EE" stroke-opacity=".11" stroke-width="14"/>
+      <circle r="80" stroke="#D6B25E" stroke-opacity=".13" stroke-width="8"/>
+      <use href="#drop" transform="rotate(0)"/>
+      <use href="#drop" transform="rotate(30)"/>
+      <use href="#drop" transform="rotate(60)"/>
+      <use href="#drop" transform="rotate(90)"/>
+      <use href="#drop" transform="rotate(120)"/>
+      <use href="#drop" transform="rotate(150)"/>
+      <use href="#drop" transform="rotate(180)"/>
+      <use href="#drop" transform="rotate(210)"/>
+      <use href="#drop" transform="rotate(240)"/>
+      <use href="#drop" transform="rotate(270)"/>
+      <use href="#drop" transform="rotate(300)"/>
+      <use href="#drop" transform="rotate(330)"/>
+      <path d="M-46 14c25-42 71-42 94-6-29-8-53 0-72 25 22-7 39-2 55 12-31 9-61 0-77-31Z" fill="#8CB8D9" fill-opacity=".15"/>
+    </symbol>
+  </defs>
+  <rect width="720" height="420" fill="#083640" fill-opacity=".01"/>
+  <use href="#seal" x="96" y="96"/>
+  <use href="#seal" x="624" y="96" transform="scale(-1 1) translate(-1248 0)"/>
+  <use href="#seal" x="96" y="324" transform="rotate(180 96 324)"/>
+  <use href="#seal" x="624" y="324" transform="scale(-1 -1) translate(-1248 -648)"/>
+  <path d="M174 210c82-44 290-44 372 0-101 30-271 30-372 0Z" fill="#F8F5EE" fill-opacity=".05"/>
+</svg>

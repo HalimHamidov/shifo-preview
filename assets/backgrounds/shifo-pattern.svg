@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="960" viewBox="0 0 640 960" fill="none">
+  <defs>
+    <pattern id="mosaic" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 24 24 0M-6 6 6-6M18 30 30 18" stroke="#2E4E73" stroke-opacity=".08" stroke-width="1"/>
+      <circle cx="12" cy="12" r="1.2" fill="#D6B25E" fill-opacity=".18"/>
+    </pattern>
+    <symbol id="petal" viewBox="-18 -78 36 96">
+      <path d="M0-76C18-48 18-18 0 18-18-18-18-48 0-76Z" fill="#B56A4A" fill-opacity=".34"/>
+      <path d="M0-59C10-38 9-15 0 6-9-15-10-38 0-59Z" fill="#F8F5EE" fill-opacity=".6"/>
+      <path d="M0-74C17-48 17-17 0 17-17-17-17-48 0-74Z" stroke="#2E4E73" stroke-opacity=".28" stroke-width="2"/>
+    </symbol>
+    <symbol id="rosette" viewBox="-150 -150 300 300">
+      <circle r="132" fill="url(#mosaic)" opacity=".42"/>
+      <circle r="118" stroke="#D8C7A1" stroke-opacity=".38" stroke-width="18"/>
+      <circle r="94" stroke="#2E4E73" stroke-opacity=".22" stroke-width="12"/>
+      <g>
+        <use href="#petal" transform="rotate(0)"/>
+        <use href="#petal" transform="rotate(22.5)"/>
+        <use href="#petal" transform="rotate(45)"/>
+        <use href="#petal" transform="rotate(67.5)"/>
+        <use href="#petal" transform="rotate(90)"/>
+        <use href="#petal" transform="rotate(112.5)"/>
+        <use href="#petal" transform="rotate(135)"/>
+        <use href="#petal" transform="rotate(157.5)"/>
+        <use href="#petal" transform="rotate(180)"/>
+        <use href="#petal" transform="rotate(202.5)"/>
+        <use href="#petal" transform="rotate(225)"/>
+        <use href="#petal" transform="rotate(247.5)"/>
+        <use href="#petal" transform="rotate(270)"/>
+        <use href="#petal" transform="rotate(292.5)"/>
+        <use href="#petal" transform="rotate(315)"/>
+        <use href="#petal" transform="rotate(337.5)"/>
+      </g>
+      <path d="M-52 20C-24-38 42-42 68 0c-35-8-64 1-88 35 25-8 47-2 68 18-43 16-83 1-100-33Z" fill="#8CB8D9" fill-opacity=".34"/>
+      <path d="M-40 14C-15-20 23-24 48-2 20-8-5-1-27 25c22-5 38 0 54 13-31 7-57-1-67-24Z" fill="#F8F5EE" fill-opacity=".6"/>
+      <circle r="28" fill="#D6B25E" fill-opacity=".28"/>
+      <circle r="15" fill="#2E4E73" fill-opacity=".24"/>
+    </symbol>
+    <symbol id="vine" viewBox="0 0 180 340">
+      <path d="M108 2C58 78 161 125 83 203 43 243 34 285 66 338" stroke="#2E4E73" stroke-opacity=".18" stroke-width="14" stroke-linecap="round"/>
+      <path d="M102 54C42 70 26 112 51 144c37-11 60-41 51-90Z" fill="#D8C7A1" fill-opacity=".42" stroke="#2E4E73" stroke-opacity=".16" stroke-width="4"/>
+      <path d="M98 198c53 11 80 45 65 83-39 2-70-23-65-83Z" fill="#8CB8D9" fill-opacity=".34" stroke="#2E4E73" stroke-opacity=".16" stroke-width="4"/>
+      <path d="M60 236c-35 18-48 47-34 75 29-4 47-28 34-75Z" fill="#B56A4A" fill-opacity=".24" stroke="#2E4E73" stroke-opacity=".13" stroke-width="4"/>
+    </symbol>
+  </defs>
+  <rect width="640" height="960" fill="#F8F5EE" fill-opacity=".01"/>
+  <g opacity=".78">
+    <use href="#rosette" x="148" y="150"/>
+    <use href="#rosette" x="148" y="810" transform="rotate(180 148 810)"/>
+    <use href="#rosette" x="492" y="150" transform="scale(-1 1) translate(-984 0)"/>
+    <use href="#rosette" x="492" y="810" transform="scale(-1 -1) translate(-984 -1620)"/>
+  </g>
+  <g opacity=".72">
+    <use href="#vine" x="12" y="300"/>
+    <use href="#vine" x="448" y="300" transform="scale(-1 1) translate(-1076 0)"/>
+  </g>
+  <path d="M320 78c48 54 48 119 0 173-48-54-48-119 0-173Z" stroke="#D6B25E" stroke-opacity=".18" stroke-width="8"/>
+  <path d="M320 709c48 54 48 119 0 173-48-54-48-119 0-173Z" stroke="#D6B25E" stroke-opacity=".18" stroke-width="8"/>
+  <path d="M262 480c29-28 87-28 116 0-29 28-87 28-116 0Z" fill="#8CB8D9" fill-opacity=".12" stroke="#2E4E73" stroke-opacity=".12" stroke-width="4"/>
+</svg>

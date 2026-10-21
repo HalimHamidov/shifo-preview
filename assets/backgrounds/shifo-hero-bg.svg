@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="760">
+      <stop stop-color="#EAF4F8"/>
+      <stop offset=".58" stop-color="#F8F5EE"/>
+      <stop offset="1" stop-color="#F3E8D0"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 138) rotate(90) scale(102)">
+      <stop stop-color="#D6B25E" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#D6B25E" stop-opacity="0"/>
+    </radialGradient>
+    <symbol id="ornament" viewBox="-120 -120 240 240">
+      <circle r="102" stroke="#2E4E73" stroke-opacity=".1" stroke-width="14"/>
+      <circle r="78" stroke="#D8C7A1" stroke-opacity=".16" stroke-width="8"/>
+      <path d="M0-82C24-48 24-17 0 18-24-17-24-48 0-82Z" fill="#B56A4A" fill-opacity=".09"/>
+      <path d="M0 82C24 48 24 17 0-18-24 17-24 48 0 82Z" fill="#B56A4A" fill-opacity=".09"/>
+      <path d="M-82 0c34-24 65-24 100 0-35 24-66 24-100 0Z" fill="#8CB8D9" fill-opacity=".11"/>
+      <path d="M82 0c-34-24-65-24-100 0 35 24 66 24 100 0Z" fill="#8CB8D9" fill-opacity=".11"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="760" fill="url(#sky)"/>
+  <rect width="1600" height="760" fill="url(#sun)"/>
+  <path d="M0 486c146-40 281-34 405 17 111 46 219 57 323 15 122-49 261-52 416-9 166 46 318 38 456-24v275H0V486Z" fill="#8CB8D9" fill-opacity=".26"/>
+  <path d="M0 538c158-42 315-35 471 20 117 41 225 39 324-6 128-57 278-59 448-5 133 42 252 38 357-12v225H0V538Z" fill="#2E4E73" fill-opacity=".1"/>
+  <path d="M0 594c188-37 345-27 472 31 104 47 222 47 354 0 146-52 311-51 495 3 116 34 209 33 279-3v135H0V594Z" fill="#F8F5EE" fill-opacity=".54"/>
+  <g opacity=".18">
+    <path d="M360 435h486v86H360z" fill="#2E4E73"/>
+    <path d="M394 389h418v46H394z" fill="#2E4E73"/>
+    <path d="M425 352h356v37H425z" fill="#2E4E73"/>
+    <path d="M390 435v86M458 389v132M526 389v132M594 352v169M662 389v132M730 389v132M798 435v86" stroke="#F8F5EE" stroke-opacity=".75" stroke-width="8"/>
+    <path d="M344 521h520" stroke="#2E4E73" stroke-opacity=".46" stroke-width="10"/>
+    <path d="M372 345h462" stroke="#D6B25E" stroke-opacity=".4" stroke-width="5"/>
+  </g>
+  <g opacity=".54">
+    <use href="#ornament" x="90" y="140"/>
+    <use href="#ornament" x="1510" y="140"/>
+    <use href="#ornament" x="90" y="600"/>
+    <use href="#ornament" x="1510" y="600"/>
+  </g>
+  <path d="M786 184c42-28 78-28 118 0M858 183c-32 9-53 26-64 50" stroke="#2E4E73" stroke-opacity=".28" stroke-width="10" stroke-linecap="round"/>
+  <path d="M750 264c62-28 110 45 173 18 42-18 66-39 111-17-58 33-103 46-151 20-47-25-75-52-133-21Z" fill="#8CB8D9" fill-opacity=".28"/>
+  <path d="M693 304c137-38 206 76 343 16" stroke="#8CB8D9" stroke-opacity=".28" stroke-width="24" stroke-linecap="round"/>
+  <rect width="1600" height="760" fill="#F8F5EE" fill-opacity=".08"/>
+</svg>

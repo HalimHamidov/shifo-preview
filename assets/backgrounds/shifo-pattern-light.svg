@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" fill="none">
+  <defs>
+    <radialGradient id="fade" cx="50%" cy="50%" r="62%">
+      <stop offset="0" stop-color="#F8F5EE" stop-opacity="0"/>
+      <stop offset=".7" stop-color="#F8F5EE" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#F8F5EE" stop-opacity=".82"/>
+    </radialGradient>
+    <symbol id="leaf" viewBox="-28 -86 56 110">
+      <path d="M0-84C28-49 28-16 0 24-28-16-28-49 0-84Z" fill="#B56A4A" fill-opacity=".18" stroke="#2E4E73" stroke-opacity=".12" stroke-width="3"/>
+      <path d="M0-62C13-35 12-12 0 10-12-12-13-35 0-62Z" fill="#D6B25E" fill-opacity=".16"/>
+    </symbol>
+    <symbol id="mark" viewBox="-130 -130 260 260">
+      <circle r="120" fill="#F8F5EE" fill-opacity=".28"/>
+      <circle r="108" stroke="#D8C7A1" stroke-opacity=".28" stroke-width="16"/>
+      <circle r="82" stroke="#8CB8D9" stroke-opacity=".2" stroke-width="10"/>
+      <use href="#leaf" transform="rotate(0)"/>
+      <use href="#leaf" transform="rotate(30)"/>
+      <use href="#leaf" transform="rotate(60)"/>
+      <use href="#leaf" transform="rotate(90)"/>
+      <use href="#leaf" transform="rotate(120)"/>
+      <use href="#leaf" transform="rotate(150)"/>
+      <use href="#leaf" transform="rotate(180)"/>
+      <use href="#leaf" transform="rotate(210)"/>
+      <use href="#leaf" transform="rotate(240)"/>
+      <use href="#leaf" transform="rotate(270)"/>
+      <use href="#leaf" transform="rotate(300)"/>
+      <use href="#leaf" transform="rotate(330)"/>
+      <path d="M-47 12C-22-32 28-34 52-1c-26-7-50 2-68 27 23-8 41-3 58 14-35 8-68-2-89-28Z" fill="#8CB8D9" fill-opacity=".18"/>
+      <circle r="18" fill="#D6B25E" fill-opacity=".17"/>
+    </symbol>
+  </defs>
+  <rect width="720" height="360" fill="url(#fade)"/>
+  <g opacity=".76">
+    <use href="#mark" x="92" y="84"/>
+    <use href="#mark" x="628" y="84" transform="scale(-1 1) translate(-1256 0)"/>
+    <use href="#mark" x="92" y="276" transform="rotate(180 92 276)"/>
+    <use href="#mark" x="628" y="276" transform="scale(-1 -1) translate(-1256 -552)"/>
+  </g>
+  <path d="M210 180c72-42 228-42 300 0-82 26-218 26-300 0Z" fill="#8CB8D9" fill-opacity=".06"/>
+</svg>
