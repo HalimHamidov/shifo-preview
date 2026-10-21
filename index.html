@@ -29,6 +29,7 @@
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="assets/css/main.css?v=carousel-20260922">
   <link rel="stylesheet" href="assets/css/preview.css?v=step1">
+  <link rel="stylesheet" href="assets/css/banner.css?v=banner-2">
 </head>
 <body class="bg-shifo-pattern">
   <header class="site-header">
@@ -138,7 +139,7 @@
   </div>
 
   <main id="top">
-    <section class="hero bg-shifo-hero" aria-labelledby="hero-title">
+    <section data-banner="18000" class="hero bg-shifo-hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title"><span class="hero-title-line hero-title-primary">ЗАБОТИМСЯ О ВАШЕМ ЗДОРОВЬЕ</span><span class="hero-title-line hero-title-primary">ПОКА ВЫ ОТДЫХАЕТЕ</span><span class="hero-title-line hero-title-primary hero-title-tg-only">АҲАМИЯТИ ҶИДДӢ МЕДИҲЕМ.</span><span class="hero-title-line hero-title-slogan">ВАШЕ ЗДОРОВЬЕ — НАШ ГЛАВНЫЙ ПРИОРИТЕТ</span></h1>
@@ -149,7 +150,23 @@
           </div>
         </div>
       </div>
-    </section>
+
+    <div class="banner-slide" hidden style="--banner-image: url('../../img/banner/comfortable-room.png')">
+      <picture><source media="(max-aspect-ratio: 4/5)" srcset="img/banner/comfortable-room-mobile.png"><img src="img/banner/comfortable-room.png" alt="Комфортное размещение. Уютные номера для отдыха одного гостя, семьи или группы." width="1672" height="941" decoding="async"></picture><div class="banner-caption"><h2>Комфортное размещение</h2><p>Уютные номера для отдыха одного гостя, семьи или группы.</p></div>
+    </div>
+    <div class="banner-slide" hidden style="--banner-image: url('../../img/banner/wellness-equipment.png')">
+      <picture><source media="(max-aspect-ratio: 4/5)" srcset="img/banner/wellness-equipment-mobile.png"><img src="img/banner/wellness-equipment.png" alt="Оздоровительное оборудование. Методы лечения и профилактики для вашего здоровья." width="1672" height="941" decoding="async"></picture><div class="banner-caption"><h2>Оздоровительное оборудование</h2><p>Эффективные методы лечения и профилактики для вашего здоровья.</p></div>
+    </div>
+    <div class="banner-slide" hidden style="--banner-image: url('../../img/banner/rest-by-the-sea.png')">
+      <picture><source media="(max-aspect-ratio: 4/5)" srcset="img/banner/rest-by-the-sea-mobile.png"><img src="img/banner/rest-by-the-sea.png" alt="Отдых с пользой для души. Профилактика, лечение и восстановление на берегу Кайраккумского моря." width="1672" height="941" decoding="async"></picture><div class="banner-caption"><h2>Отдых с пользой для души</h2><p>Профилактика, лечение и восстановление на берегу Кайраккумского моря</p></div>
+    </div>
+    <div class="banner-controls" role="group" aria-label="Слайды главного баннера">
+      <button type="button" data-banner-prev aria-label="Предыдущий слайд">‹</button>
+      <span class="banner-count" aria-hidden="true">1 / 4</span>
+      <button type="button" data-banner-next aria-label="Следующий слайд">›</button>
+      <button type="button" data-banner-pause aria-label="Автоматическая смена слайдов" aria-pressed="true"><span aria-hidden="true">Ⅱ</span></button>
+    </div>
+  </section>
 
       <section class="territory-overview" id="about" aria-labelledby="territory-title">
     <a class="territory-map" href="img/maps/yandex-map-2.png" target="_blank" rel="noopener" aria-label="Открыть план территории санатория Шифо">
@@ -992,7 +1009,8 @@
     <a href="#prices">Цены</a>
   </nav>
   <script src="assets/js/bitrix-loader.js?v=f1a0029"></script>
-  <script src="assets/js/main.js?v=audio-20260922"></script>
+  <script src="assets/js/main.js?v=preview-banner-2"></script>
   <script src="assets/js/preview.js?v=step1"></script>
+  <script src="assets/js/banner.js?v=banner-2"></script>
 </body>
 </html>

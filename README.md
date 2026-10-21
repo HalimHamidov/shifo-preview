@@ -40,3 +40,18 @@ Verified at 1440x900 and 390x844: no horizontal overflow, white header below the
 hero, four language switches, and no observed browser console errors. Static
 checks confirm the original hero and subsequent sections are unchanged, local
 asset/anchor targets resolve, and preview submissions do not call the CRM.
+
+### Step 2: responsive hero slides
+
+Three supplied images follow the unchanged original first slide: accommodation,
+wellness equipment, and rest by the sea. Original landscape PNGs are preserved
+byte-for-byte and fitted under the header without distortion or clipped text.
+Any remaining space uses a softly blurred continuation of the same artwork.
+Portrait viewports use separate AI-adapted images with readable HTML captions;
+they fill the available space between the header and mobile action bar.
+
+Automatic image rotation uses 18 seconds; the existing first-slide headline
+rotation remains unchanged. Arrow controls pause rotation for manual browsing;
+the play control resumes it. Reduced-motion preferences pause it initially.
+All slides share the original hero's fixed visual space. Files and generation
+prompts are documented in `docs/BANNER_ASSETS.md`.

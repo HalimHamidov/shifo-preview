@@ -1385,6 +1385,15 @@
     };
 
     const TERRITORY_COPY = [
+      ["Слайды главного баннера", "Аксҳои баннери асосӣ", "Main banner slides", "Asosiy banner slaydlari"],
+      ["Предыдущий слайд", "Акси пешина", "Previous slide", "Oldingi slayd"],
+      ["Следующий слайд", "Акси навбатӣ", "Next slide", "Keyingi slayd"],
+      ["Автоматическая смена слайдов", "Ивазшавии худкори аксҳо", "Automatic slide rotation", "Slaydlarni avtomatik almashtirish"],
+      ["Комфортное размещение", "Ҷойгиршавии бароҳат", "A comfortable stay", "Qulay joylashish"],
+      ["Уютные номера для отдыха одного гостя, семьи или группы.", "Ҳуҷраҳои бароҳат барои истироҳати як меҳмон, оила ё гурӯҳ.", "Comfortable rooms for solo guests, families and groups.", "Yolg‘iz mehmonlar, oilalar va guruhlar uchun shinam xonalar."],
+      ["Оздоровительное оборудование", "Таҷҳизоти солимгардонӣ", "Wellness equipment", "Sog‘lomlashtirish uskunalari"],
+      ["Эффективные методы лечения и профилактики для вашего здоровья.", "Усулҳои муолиҷа ва пешгирӣ барои саломатии шумо.", "Treatment and prevention methods for your wellbeing.", "Salomatligingiz uchun davolash va profilaktika usullari."],
+      ["Отдых с пользой для души", "Истироҳат барои оромии рӯҳ", "Rest that restores the soul", "Qalbga orom beradigan dam olish"],
       ["Шифо — отдых у Таджикского моря.", "Шифо — истироҳат дар соҳили Баҳри Тоҷик.", "Shifo — a retreat by the Tajik Sea.", "Shifo — Tojik dengizi bo‘yida dam olish."],
       ["Отдыхайте и восстанавливайте силы на берегу Кайраккумского водохранилища, среди зелени и спокойствия.", "Дар соҳили обанбори Қайроққум, дар оғӯши сабзазор ва оромӣ истироҳат кунед ва нерӯ гиред.", "Rest and recharge by Qayroqqum Reservoir, surrounded by greenery and tranquillity.", "Qayroqqum suv ombori bo‘yida, yam-yashil va osoyishta muhitda dam oling va kuch to‘plang."],
       ["Этажа в корпусе", "Ошёна дар бино", "Floors in the building", "Binodagi qavatlar"],
