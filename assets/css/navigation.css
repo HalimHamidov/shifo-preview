@@ -12,9 +12,7 @@
 .page-intro > a { color: #386b75; font-size: 14px; }
 .page-intro h1 { margin: 18px 0 0; color: #103c42; font: 400 clamp(30px, 3vw, 48px)/1.2 'Shifo Manrope', Arial, sans-serif; }
 .procedure-overview { padding: 0; background: #f8f7f2; }
-.procedure-overview-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 28px; padding-block: 16px 24px; }
 .procedure-overview a { color: #103c42; }
-.procedure-overview-actions a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 5px; }
 .procedure-overview .procedure-collage { display: block; width: 100%; line-height: 0; }
 .procedure-collage img { display: block; width: 100%; height: auto; }
 .social-overview { padding-block: 0 48px; background: #f8f7f2; }
