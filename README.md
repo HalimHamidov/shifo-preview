@@ -61,7 +61,7 @@ prompts are documented in `docs/BANNER_ASSETS.md`.
 The territory screen uses a lighter full-height blue-grey text panel and locally
 hosted open fonts (Manrope and Cormorant Garamond, with OFL licenses) to match the
 reference's light typography and large thin numerals. The second fact is now
-**27 cottage rooms**, as confirmed by the owner, replacing the distance figure.
+**29 cottage houses** and **167 guest places**, as corrected by the owner.
 Map buttons and place markers are temporarily removed. The first hero and its
 slides are unaffected. Desktop and mobile layouts are verified before publishing.
 

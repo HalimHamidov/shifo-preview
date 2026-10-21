@@ -1385,7 +1385,7 @@
     };
 
     const TERRITORY_COPY = [
-      ["Коттеджных номеров", "Ҳуҷра дар коттеҷҳо", "Cottage rooms", "Kottej xonalari"],
+      ["Коттеджных домов", "Хонаҳои коттеҷӣ", "Cottage houses", "Kottej uylari"],
       ["Слайды главного баннера", "Аксҳои баннери асосӣ", "Main banner slides", "Asosiy banner slaydlari"],
       ["Предыдущий слайд", "Акси пешина", "Previous slide", "Oldingi slayd"],
       ["Следующий слайд", "Акси навбатӣ", "Next slide", "Keyingi slayd"],
