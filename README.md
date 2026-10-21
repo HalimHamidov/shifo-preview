@@ -100,3 +100,7 @@ Desktop and mobile menus expose the detailed sections through submenus. Inner
 pages keep a fixed white header. Legacy homepage anchors redirect to their new
 pages. All pages retain four language choices; preview CRM submissions and chat
 remain disabled. Local launch still uses `python -m http.server 8766 --bind 127.0.0.1`.
+
+The third homepage section contains the supplied physiotherapy infographic,
+copied unchanged to `img/procedures/shifo-physiotherapy.png`. It scales with its
+original proportions and opens at full size when selected, including on phones.

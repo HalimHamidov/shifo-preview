@@ -1385,6 +1385,8 @@
     };
 
     const TERRITORY_COPY = [
+      ["Коллаж лечебно-оздоровительных процедур", "Коллажи муолиҷаҳои табобатӣ ва солимгардонӣ", "Therapeutic and wellness treatments collage", "Davolash va sog‘lomlashtirish muolajalari kollaji"],
+      ["Открыть в полном размере ↗", "Кушодан бо андозаи пурра ↗", "View full size ↗", "To‘liq hajmda ochish ↗"],
       ["Главная", "Саҳифаи асосӣ", "Home", "Bosh sahifa"],
       ["Номера и цены", "Ҳуҷраҳо ва нархҳо", "Rooms and prices", "Xonalar va narxlar"],
       ["Лечебно-оздоровительные процедуры", "Муолиҷаҳои табобатӣ ва солимгардонӣ", "Therapeutic and wellness treatments", "Davolash va sog‘lomlashtirish muolajalari"],
