@@ -1384,6 +1384,27 @@
       uz: "img/webp/logo-ru.webp"
     };
 
+    const TERRITORY_COPY = [
+      ["Шифо — отдых у Таджикского моря.", "Шифо — истироҳат дар соҳили Баҳри Тоҷик.", "Shifo — a retreat by the Tajik Sea.", "Shifo — Tojik dengizi bo‘yida dam olish."],
+      ["Отдыхайте и восстанавливайте силы на берегу Кайраккумского водохранилища, среди зелени и спокойствия.", "Дар соҳили обанбори Қайроққум, дар оғӯши сабзазор ва оромӣ истироҳат кунед ва нерӯ гиред.", "Rest and recharge by Qayroqqum Reservoir, surrounded by greenery and tranquillity.", "Qayroqqum suv ombori bo‘yida, yam-yashil va osoyishta muhitda dam oling va kuch to‘plang."],
+      ["Этажа в корпусе", "Ошёна дар бино", "Floors in the building", "Binodagi qavatlar"],
+      ["Рассмотреть план ↗", "Нақшаро дидан ↗", "Explore the map ↗", "Xaritani ko‘rish ↗"],
+      ["Наслаждайтесь природой", "Аз табиат лаззат баред", "Enjoy nature", "Tabiatdan zavqlaning"],
+      ["Отдыхайте с комфортом", "Бо роҳат истироҳат кунед", "Stay in comfort", "Qulay dam oling"],
+      ["Восстанавливайте силы", "Нерӯ гиред", "Restore your energy", "Kuch to‘plang"],
+      ["Спланируйте отдых", "Истироҳатро ба нақша гиред", "Plan your stay", "Dam olishni rejalashtiring"],
+      ["Связаться с нами", "Бо мо тамос гиред", "Contact us", "Biz bilan bog‘lanish"],
+      ["Шифо в цифрах", "Шифо бо рақамҳо", "Shifo in numbers", "Shifo raqamlarda"],
+      ["Отдых на территории", "Истироҳат дар ҳудуд", "Explore the resort", "Hududda dam olish"],
+      ["План территории Шифо на берегу Кайраккумского водохранилища", "Нақшаи ҳудуди Шифо дар соҳили обанбори Қайроққум", "Shifo grounds by Qayroqqum Reservoir", "Qayroqqum suv ombori bo‘yidagi Shifo hududi"],
+      ["Открыть план территории санатория Шифо", "Кушодани нақшаи ҳудуди осоишгоҳи Шифо", "Open the Shifo resort map", "Shifo sanatoriyasi xaritasini ochish"]
+    ];
+    TERRITORY_COPY.forEach(([ru, tg, en, uz]) => {
+      Object.assign(TRANSLATIONS.tg, { [ru]: tg });
+      Object.assign(TRANSLATIONS.en, { [ru]: en });
+      Object.assign(TRANSLATIONS.uz, { [ru]: uz });
+    });
+
     let currentLang = localStorage.getItem("shifo-lang") || "tg";
     let heroTitleRotationTimer = null;
 
