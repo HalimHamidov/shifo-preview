@@ -104,3 +104,5 @@ remain disabled. Local launch still uses `python -m http.server 8766 --bind 127.
 The third homepage section contains the supplied physiotherapy infographic,
 copied unchanged to `img/procedures/shifo-physiotherapy.png`. It scales with its
 original proportions and opens at full size when selected, including on phones.
+
+The homepage procedure infographic spans the full page width at its original aspect ratio. Its embedded heading is the only visible heading for this block; the source PNG is unchanged.
