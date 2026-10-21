@@ -5,6 +5,7 @@
   if (!header) return;
   let scheduled = false;
   const update = () => {
+    document.documentElement.style.setProperty('--actual-header-height', `${header.offsetHeight}px`);
     header.classList.toggle('is-past-hero', !hero || hero.getBoundingClientRect().bottom <= header.offsetHeight + 1);
     scheduled = false;
   };

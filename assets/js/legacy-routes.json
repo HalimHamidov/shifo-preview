@@ -1,0 +1,20 @@
+{
+  "programs": "health.html#programs",
+  "directions": "health.html#directions",
+  "recovery-title": "health.html#recovery-title",
+  "equipment": "health.html#equipment",
+  "equipment-title": "health.html#equipment-title",
+  "rooms": "rooms.html#rooms",
+  "prices": "rooms.html#prices",
+  "gallery": "about.html#gallery",
+  "extra-photos-title": "about.html#extra-photos-title",
+  "extra-videos-title": "about.html#extra-videos-title",
+  "reviews": "about.html#reviews",
+  "reviews-title": "about.html#reviews-title",
+  "faq": "contacts.html#faq",
+  "contacts": "contacts.html#contacts",
+  "requestForm": "contacts.html#requestForm",
+  "booking": "contacts.html#booking",
+  "cta-title": "contacts.html#cta-title",
+  "ctaCalendar": "contacts.html#ctaCalendar"
+}

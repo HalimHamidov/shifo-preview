@@ -1385,6 +1385,13 @@
     };
 
     const TERRITORY_COPY = [
+      ["Главная", "Саҳифаи асосӣ", "Home", "Bosh sahifa"],
+      ["Номера и цены", "Ҳуҷраҳо ва нархҳо", "Rooms and prices", "Xonalar va narxlar"],
+      ["Лечебно-оздоровительные процедуры", "Муолиҷаҳои табобатӣ ва солимгардонӣ", "Therapeutic and wellness treatments", "Davolash va sog‘lomlashtirish muolajalari"],
+      ["Все процедуры →", "Ҳамаи муолиҷаҳо →", "All treatments →", "Barcha muolajalar →"],
+      ["Социальные сети", "Шабакаҳои иҷтимоӣ", "Social media", "Ijtimoiy tarmoqlar"],
+      ["Дзен", "Дзен", "Dzen", "Dzen"],
+      ["Открыть статью ↗", "Хондани мақола ↗", "Read the article ↗", "Maqolani o‘qish ↗"],
       ["Территории", "Ҳудуд", "Grounds", "Hudud"],
       ["га", "га", "ha", "ga"],
       ["Коттеджных домов", "Хонаҳои коттеҷӣ", "Cottage houses", "Kottej uylari"],
@@ -1466,11 +1473,12 @@
 
     function updateSeo() {
       const seo = SEO_TEXT[currentLang] || SEO_TEXT.ru;
-      const siteUrl = "https://shifo-sanatorium.tj/";
+      const siteUrl = window.SHIFO_PREVIEW ? location.origin + location.pathname : "https://shifo-sanatorium.tj/";
+      const pageTitle = document.body.dataset.pageTitle ? `${translate(document.body.dataset.pageTitle)} | SHIFO LIFE` : seo.title;
       document.documentElement.lang = currentLang === "tg" ? "tg" : currentLang;
-      document.title = seo.title;
+      document.title = pageTitle;
       document.querySelector('meta[name="description"]')?.setAttribute("content", seo.description);
-      document.querySelector('meta[property="og:title"]')?.setAttribute("content", seo.ogTitle);
+      document.querySelector('meta[property="og:title"]')?.setAttribute("content", document.body.dataset.pageTitle ? pageTitle : seo.ogTitle);
       document.querySelector('meta[property="og:description"]')?.setAttribute("content", seo.description);
       document.querySelector('meta[property="og:url"]')?.setAttribute("content", siteUrl);
       document.querySelector('link[rel="canonical"]')?.setAttribute("href", siteUrl);
@@ -2230,7 +2238,7 @@
 
     const BITRIX_LEAD_ENDPOINT = "https://shifo.apearl.workers.dev/lead";
     const requestForm = document.getElementById("requestForm");
-    requestForm.addEventListener("submit", async (event) => {
+    requestForm?.addEventListener("submit", async (event) => {
       event.preventDefault();
 
       if (!requestForm.reportValidity()) {

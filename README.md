@@ -85,3 +85,18 @@ meaning-based Tajik, English and Uzbek translations use the existing switcher.
 The full annotated map is displayed without cropping in its own column. The
 introduction and facts sit separately on the left and never overlap map labels.
 The fourth fact is now 14 hectares of grounds, as supplied by the owner.
+
+## Current compact preview structure
+
+- `index.html`: original rotating hero, complete map beside the introduction and
+  four facts, a third section for therapeutic/wellness procedures, then compact
+  Instagram and Dzen links side by side.
+- `health.html`: rest programs, treatment areas, procedures and equipment.
+- `rooms.html`: room categories and prices.
+- `about.html`: galleries and guest reviews.
+- `contacts.html`: contacts, preview-safe enquiry form, FAQ and booking calendar.
+
+Desktop and mobile menus expose the detailed sections through submenus. Inner
+pages keep a fixed white header. Legacy homepage anchors redirect to their new
+pages. All pages retain four language choices; preview CRM submissions and chat
+remain disabled. Local launch still uses `python -m http.server 8766 --bind 127.0.0.1`.
