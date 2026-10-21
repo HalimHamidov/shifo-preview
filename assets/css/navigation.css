@@ -1,7 +1,9 @@
 .site-submenu { position: relative; }
 .site-submenu summary { display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 9px; color: inherit; font-size: 15px; font-weight: 500; cursor: pointer; list-style: none; }
 .site-submenu summary::-webkit-details-marker { display: none; }
-.site-submenu summary::after { content: '⌄'; font-size: 13px; }
+.site-submenu .submenu-caret { width: 13px; height: 13px; margin-left: 2px; flex: 0 0 13px; transition: transform 180ms ease; }
+.site-submenu[open] .submenu-caret { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .site-submenu .submenu-caret { transition: none; } }
 .site-submenu summary:focus-visible { outline: 2px solid #b9a34d; outline-offset: 2px; }
 .submenu-links { position: absolute; z-index: 60; top: calc(100% + 6px); left: 0; min-width: 260px; max-width: min(360px, calc(100vw - 32px)); padding: 8px; color: #123e48; background: #fff; border: 1px solid #dce5e4; box-shadow: 0 12px 32px rgba(0,0,0,.14); }
 .desktop-nav .submenu-links a { display: flex; height: auto; padding: 12px; color: #123e48; white-space: normal; line-height: 1.4; font-size: 14px; }

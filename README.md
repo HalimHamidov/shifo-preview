@@ -114,3 +114,5 @@ The updated procedure PNG fits within the viewport below the fixed header, prese
 The territory map uses shifo-territory-no-title.png: the upper duplicate title banner was removed with built-in imagegen; the original guide remains available in Git. The translated HTML title has a gold serif treatment and a code-native lotus ornament. Edit prompt and provenance are recorded in docs/TERRITORY_TITLE_EDIT.md.
 
 The shared white footer includes a translated contraindications notice and messenger/social links. Homepage Instagram and Dzen tiles have a 40px top gap below the infographic.
+
+Navigation dropdown indicators reuse the phone dropdown triangle, including the open-state rotation.
