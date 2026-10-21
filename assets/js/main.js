@@ -1385,6 +1385,8 @@
     };
 
     const TERRITORY_COPY = [
+      ["Имеются противопоказания. Необходима консультация специалиста.", "Зиддинишондодҳо мавҷуданд. Машварати мутахассис зарур аст.", "Contraindications apply. Consultation with a specialist is required.", "Qarshi ko‘rsatmalar mavjud. Mutaxassis maslahati zarur."],
+      ["Мессенджеры и соц. сети", "Паёмрасонҳо ва шабакаҳои иҷтимоӣ", "Messengers and social media", "Messenjerlar va ijtimoiy tarmoqlar"],
       ["Коллаж лечебно-оздоровительных процедур", "Коллажи муолиҷаҳои табобатӣ ва солимгардонӣ", "Therapeutic and wellness treatments collage", "Davolash va sog‘lomlashtirish muolajalari kollaji"],
       ["Открыть в полном размере ↗", "Кушодан бо андозаи пурра ↗", "View full size ↗", "To‘liq hajmda ochish ↗"],
       ["Главная", "Саҳифаи асосӣ", "Home", "Bosh sahifa"],
@@ -1393,6 +1395,7 @@
       ["Все процедуры →", "Ҳамаи муолиҷаҳо →", "All treatments →", "Barcha muolajalar →"],
       ["Социальные сети", "Шабакаҳои иҷтимоӣ", "Social media", "Ijtimoiy tarmoqlar"],
       ["Дзен", "Дзен", "Dzen", "Dzen"],
+      ["Дзен ↗", "Дзен ↗", "Dzen ↗", "Dzen ↗"],
       ["Открыть статью ↗", "Хондани мақола ↗", "Read the article ↗", "Maqolani o‘qish ↗"],
       ["Территории", "Ҳудуд", "Grounds", "Hudud"],
       ["га", "га", "ha", "ga"],

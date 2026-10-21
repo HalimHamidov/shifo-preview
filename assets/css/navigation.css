@@ -18,7 +18,7 @@
 @media (max-width: 700px) {
   .procedure-collage img { max-height: calc(100svh - var(--actual-header-height, 75px) - 72px); }
 }
-.social-overview { padding-block: 0 48px; background: #f8f7f2; }
+.social-overview { padding-block: 40px 48px; background: #fff; }
 .social-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .social-links > a { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 24px 28px; min-height: 92px; color: #fff; }
 .social-instagram { background: linear-gradient(110deg, #79546c, #b34c79); }
@@ -26,6 +26,15 @@
 .social-links strong { font: 500 24px/1.2 'Shifo Manrope', Arial, sans-serif; }
 .social-links span { font-size: 15px; }
 .social-links a:focus-visible { outline: 3px solid #b9a34d; outline-offset: 4px; }
+.site-footer { background: #fff; color: #39474c; border-top: 1px solid #e7ebe8; }
+.site-footer .footer-brand, .site-footer .footer-links a { color: #142f37; }
+.footer-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 36px; padding-top: 28px; border-top: 1px solid #e7ebe8; }
+.footer-medical, .footer-social > p { margin: 0; font: 400 14px/1.6 'Shifo Manrope', Arial, sans-serif; text-transform: uppercase; }
+.footer-medical { max-width: 520px; }
+.footer-social-links { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 10px; }
+.footer-social-links a { display: inline-flex; align-items: center; min-height: 44px; color: #142f37; font-size: 15px; }
+.footer-social-links a:focus-visible { outline: 2px solid #a18b48; outline-offset: 4px; }
+@media (max-width: 700px) { .footer-bottom { grid-template-columns: 1fr; gap: 24px; } }
 .mobile-panel { max-height: calc(100svh - var(--header-height) - 72px); overflow-y: auto; }
 .mobile-nav .site-submenu { border-bottom: 1px solid #dce5e4; }
 .mobile-nav .site-submenu summary { padding: 14px 0; justify-content: space-between; color: #123e48; font-weight: 600; }
