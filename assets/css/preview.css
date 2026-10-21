@@ -98,7 +98,7 @@
   .territory-overview { height: auto; overflow: visible; padding: 0; }
   .territory-map { position: relative; inset: auto; z-index: 0; }
   .territory-map img { display: block; width: 100%; height: auto; object-fit: contain; }
-  .territory-summary { position: relative; inset: auto; padding: 30px 24px; background: linear-gradient(rgba(7, 29, 34, .48), rgba(7, 29, 34, .48)), url('../../img/maps/yandex-map-2.png') center / cover; backdrop-filter: none; }
+  .territory-summary { position: relative; inset: auto; padding: 30px 24px; background: linear-gradient(rgba(7, 29, 34, .48), rgba(7, 29, 34, .48)), url('../../img/maps/shifo-territory-guide.png') center / cover; backdrop-filter: none; }
   .territory-open-map { top: 14px; left: 14px; }
   .territory-summary h2 { font-size: 20px; margin-bottom: 22px; }
   .territory-summary > p { font-size: 18px; }

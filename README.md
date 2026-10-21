@@ -70,3 +70,10 @@ slides are unaffected. Desktop and mobile layouts are verified before publishing
 The right-hand panel now uses a transparent tint without blur, so the territory
 map remains visible below the text. The full-map button opens the original image
 in a separate tab. Mobile text also overlays the map; place markers remain hidden.
+
+### Step 5: default illustrated map
+
+The supplied `Карта мест силы санатория «ШИФО».png` is now the default territory
+image (`img/maps/shifo-territory-guide.png`) on desktop and mobile. The full-map
+button opens this same image with its embedded labels. The original unlabelled
+map remains available in the repository for rollback.
