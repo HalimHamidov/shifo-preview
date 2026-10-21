@@ -77,3 +77,7 @@ The supplied `Карта мест силы санатория «ШИФО».png` 
 image (`img/maps/shifo-territory-guide.png`) on desktop and mobile. The full-map
 button opens this same image with its embedded labels. The original unlabelled
 map remains available in the repository for rollback.
+
+The territory panel's headline and introduction describe Shifo as a place to
+recharge, with wellbeing, relaxation and harmony with nature. Russian copy and
+meaning-based Tajik, English and Uzbek translations use the existing switcher.
