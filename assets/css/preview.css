@@ -61,13 +61,18 @@
   background: linear-gradient(90deg, transparent, rgba(3, 48, 49, .38) 50%, transparent);
 }
 .territory-summary h2 {
-  margin: 0;
-  color: #fff9ec;
-  font: 400 clamp(28px, 2.65vw, 52px)/1.08 'Shifo Cormorant', Georgia, serif;
-  letter-spacing: -.025em;
+  position: relative;
+  margin: 0 0 30px;
+  padding: 22px 20px 26px;
+  border: 3px double #cba65d;
+  background: linear-gradient(110deg, rgba(0, 27, 28, .94), rgba(0, 43, 42, .85));
+  color: #eed096;
+  font: 400 clamp(26px, 2.05vw, 40px)/1.18 Georgia, 'Times New Roman', serif;
+  text-align: center;
+  letter-spacing: -.02em;
   text-wrap: balance;
 }
-.territory-summary h2::after { content: ''; display: block; width: 64px; height: 2px; margin: 24px 0; background: #ddc28b; }
+.territory-summary h2::after { content: ''; position: absolute; left: 50%; bottom: -15px; width: 78px; height: 28px; transform: translateX(-50%); background: #062f2e url('../../img/maps/title-ornament.svg') center / 72px 26px no-repeat; }
 .territory-summary > p { margin: 0; color: #f2f4ed; font: 400 clamp(15px, 1.05vw, 20px)/1.6 'Shifo Manrope', Arial, sans-serif; }
 .territory-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 28px; margin: 30px 0 0; }
 .territory-facts > div { display: flex; min-width: 0; flex-direction: column; }
@@ -87,8 +92,7 @@
   .territory-overview { grid-template-columns: 1fr; }
   .territory-summary { padding: 34px 32px; background-size: cover, auto max(220%, 190vw); background-position: center top; }
   .territory-summary::after { inset: auto 0 -20px; width: auto; height: 40px; background: linear-gradient(180deg, transparent, rgba(3,48,49,.38), transparent); }
-  .territory-summary h2 { max-width: 600px; font-size: 38px; }
-  .territory-summary h2::after { margin: 18px 0; }
+  .territory-summary h2 { max-width: 600px; font-size: 34px; }
   .territory-summary > p { max-width: 620px; font-size: 16px; }
   .territory-facts { max-width: 600px; margin-top: 24px; gap: 20px 32px; }
   .territory-facts dd { font-size: 58px; }
@@ -96,7 +100,7 @@
 }
 @media (max-width: 480px) {
   .territory-summary { padding: 30px 24px; }
-  .territory-summary h2 { font-size: 34px; }
+  .territory-summary h2 { font-size: 28px; padding: 20px 14px 24px; }
   .territory-facts { gap: 22px; }
   .territory-facts dd { font-size: 54px; }
 }

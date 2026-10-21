@@ -110,3 +110,5 @@ The homepage procedure infographic spans the full page width at its original asp
 Territory section: emerald landscape panel with cream/gold statistics, 34/66 desktop columns, information first on mobile. The annotated map PNG is unchanged and opens at full size by clicking/tapping it. The separate plan button is removed. Background is a lightweight WebP export of the existing banner landscape.
 
 The updated procedure PNG fits within the viewport below the fixed header, preserving its full aspect ratio and original file bytes. Natural green CSS gradients fill any side space; tapping the infographic opens the original.
+
+The territory map uses shifo-territory-no-title.png: the upper duplicate title banner was removed with built-in imagegen; the original guide remains available in Git. The translated HTML title has a gold serif treatment and a code-native lotus ornament. Edit prompt and provenance are recorded in docs/TERRITORY_TITLE_EDIT.md.
