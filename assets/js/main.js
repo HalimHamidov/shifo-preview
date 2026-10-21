@@ -1385,6 +1385,8 @@
     };
 
     const TERRITORY_COPY = [
+      ["Территории", "Ҳудуд", "Grounds", "Hudud"],
+      ["га", "га", "ha", "ga"],
       ["Коттеджных домов", "Хонаҳои коттеҷӣ", "Cottage houses", "Kottej uylari"],
       ["Слайды главного баннера", "Аксҳои баннери асосӣ", "Main banner slides", "Asosiy banner slaydlari"],
       ["Предыдущий слайд", "Акси пешина", "Previous slide", "Oldingi slayd"],

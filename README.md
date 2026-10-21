@@ -81,3 +81,7 @@ map remains available in the repository for rollback.
 The territory panel's headline and introduction describe Shifo as a place to
 recharge, with wellbeing, relaxation and harmony with nature. Russian copy and
 meaning-based Tajik, English and Uzbek translations use the existing switcher.
+
+The full annotated map is displayed without cropping in its own column. The
+introduction and facts sit separately on the left and never overlap map labels.
+The fourth fact is now 14 hectares of grounds, as supplied by the owner.

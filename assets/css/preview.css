@@ -33,79 +33,48 @@
 
 .territory-overview {
   position: relative;
-  isolation: isolate;
-  height: clamp(680px, calc(100svh - var(--header-height)), 980px);
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(280px, 30%) minmax(0, 70%);
+  align-items: center;
   color: #fff;
   background: #103c42;
   scroll-margin-top: -18px;
 }
-.territory-map {
-  position: absolute;
-  inset: 0;
+.territory-map { grid-column: 2; grid-row: 1; min-width: 0; }
+.territory-map img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100svh - var(--header-height));
+  object-fit: contain;
 }
-.territory-map img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 65%; filter: brightness(1.06) saturate(.92); }
-.territory-map { z-index: -2; }
-.territory-summary {
-  position: absolute;
-  inset: 0 0 0 50%;
-  padding: clamp(48px, 5.35vw, 100px) clamp(32px, 6vw, 110px) 58px;
-  background: linear-gradient(180deg, rgba(7, 29, 34, .4), rgba(7, 29, 34, .12));
-  backdrop-filter: none;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, .85);
-}
+.territory-summary { grid-column: 1; grid-row: 1; min-width: 0; padding: clamp(24px, 3vw, 56px); }
 .territory-summary h2 {
-  margin: 0 0 32px;
+  margin: 0 0 24px;
   color: inherit;
   font: 300 clamp(18px, 1.3125vw, 24px)/1.5 'Shifo Manrope', Arial, sans-serif;
   letter-spacing: -.02em;
 }
-.territory-summary > p {
-  margin: 0;
-  max-width: 650px;
-  font: 300 clamp(18px, 1.3125vw, 24px)/1.5 'Shifo Manrope', Arial, sans-serif;
-  letter-spacing: -.02em;
-  text-wrap: pretty;
-}
-.territory-facts { display: grid; grid-template-columns: 1.2fr 1fr 1.1fr 1fr; gap: clamp(18px, 2.2vw, 42px); margin: 40px 0 0; }
+.territory-summary > p { margin: 0; font: 300 clamp(16px, 1.15vw, 20px)/1.55 'Shifo Manrope', Arial, sans-serif; }
+.territory-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 30px 0 0; }
 .territory-facts > div { display: flex; min-width: 0; flex-direction: column; }
-.territory-facts dt { order: 1; padding-top: 7px; border-top: 1px solid rgba(255,255,255,.48); font: 300 clamp(13px, 1vw, 18px)/1.4 'Shifo Manrope', Arial, sans-serif; letter-spacing: -.02em; text-transform: uppercase; }
-.territory-facts dd { margin: 0 0 4px; font: 300 clamp(48px, 4.375vw, 84px)/1 'Shifo Cormorant', Georgia, serif; font-variant-numeric: lining-nums; letter-spacing: -.02em; white-space: nowrap; }
-.territory-open-map {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 10px 16px;
-  color: #fff;
-  background: rgba(7, 29, 34, .82);
-  border: 1px solid rgba(255, 255, 255, .45);
-  font: 400 14px/1.4 'Shifo Manrope', Arial, sans-serif;
-}
-.territory-open-map:hover { background: #123e48; }
+.territory-facts dt { order: 1; padding-top: 7px; border-top: 1px solid rgba(255,255,255,.48); font: 300 clamp(12px, .9vw, 15px)/1.4 'Shifo Manrope', Arial, sans-serif; text-transform: uppercase; }
+.territory-facts dd { margin: 0 0 4px; font: 300 clamp(48px, 4vw, 72px)/1 'Shifo Cormorant', Georgia, serif; font-variant-numeric: lining-nums; letter-spacing: -.02em; white-space: nowrap; }
+.territory-facts dd small { font: 300 .4em/1 'Shifo Manrope', Arial, sans-serif; }
+.territory-open-map { display: inline-flex; align-items: center; min-height: 44px; margin-top: 28px; padding: 10px 16px; color: #fff; background: transparent; border: 1px solid rgba(255,255,255,.6); font: 400 14px/1.4 'Shifo Manrope', Arial, sans-serif; }
+.territory-open-map:hover { background: #24555e; }
 .territory-open-map:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-
-@media (max-width: 1100px) {
-  .territory-summary { left: 43%; padding: 38px 30px; }
-  .territory-facts { gap: 18px; margin-top: 32px; }
-  .territory-facts dd { font-size: 48px; }
+@media (max-width: 900px) {
+  .territory-overview { grid-template-columns: 1fr; }
+  .territory-map { grid-column: 1; grid-row: 1; }
+  .territory-map img { max-height: none; }
+  .territory-summary { grid-column: 1; grid-row: 2; padding: 30px 24px; }
+  .territory-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
-@media (max-width: 700px) {
-  .territory-overview { height: auto; overflow: visible; padding: 0; }
-  .territory-map { position: relative; inset: auto; z-index: 0; }
-  .territory-map img { display: block; width: 100%; height: auto; object-fit: contain; }
-  .territory-summary { position: relative; inset: auto; padding: 30px 24px; background: linear-gradient(rgba(7, 29, 34, .48), rgba(7, 29, 34, .48)), url('../../img/maps/shifo-territory-guide.png') center / cover; backdrop-filter: none; }
-  .territory-open-map { top: 14px; left: 14px; }
-  .territory-summary h2 { font-size: 20px; margin-bottom: 22px; }
+@media (max-width: 559px) {
+  .territory-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .territory-summary h2 { font-size: 20px; }
   .territory-summary > p { font-size: 18px; }
-  .territory-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 30px; margin-top: 28px; }
   .territory-facts dd { font-size: 60px; }
-  .territory-facts dt { font-size: 13px; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .site-header { transition: none; }
-}
+@media (prefers-reduced-motion: reduce) { .site-header { transition: none; } }
