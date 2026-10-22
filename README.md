@@ -116,3 +116,7 @@ The territory map uses shifo-territory-no-title.png: the upper duplicate title b
 The shared white footer includes a translated contraindications notice and messenger/social links. Homepage Instagram and Dzen tiles have a 40px top gap below the infographic.
 
 Navigation dropdown indicators reuse the phone dropdown triangle, including the open-state rotation.
+
+Homepage video section (after procedures): one native HTML video player, four owner-supplied clips, thumbnail selection and previous/next controls. Playback starts after a click and completion returns to the next poster in our own four-video selector. No third-party recommendations, ads or YouTube code load. Original YouTube links are retained as playback-error fallback.
+
+The source files contain a 1280x720 horizontal picture centered inside a 1280x2276 portrait canvas. Web copies remove only the top/bottom padding (crop=1280:720:0:778), with unchanged faces and picture geometry. Copies use H.264 CRF25, AAC 96k and faststart. Original files and YouTube uploads remain unchanged. Only the selected MP4 is requested after interaction; no video is downloaded on initial page load.

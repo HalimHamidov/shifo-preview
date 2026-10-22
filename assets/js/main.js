@@ -1385,6 +1385,18 @@
     };
 
     const TERRITORY_COPY = [
+      ["Шифо в кадре", "Шифо дар навор", "Shifo on film", "Shifo videolarda"],
+      ["Обзор санатория", "Муаррифии осоишгоҳ", "Sanatorium overview", "Sanatoriy haqida"],
+      ["Главный врач", "Сардухтур", "Head physician", "Bosh shifokor"],
+      ["Отзыв гостя · 1", "Назари меҳмон · 1", "Guest review · 1", "Mehmon fikri · 1"],
+      ["Отзыв гостя · 2", "Назари меҳмон · 2", "Guest review · 2", "Mehmon fikri · 2"],
+      ["Смотреть выбранное видео", "Тамошои навори интихобшуда", "Play selected video", "Tanlangan videoni ko‘rish"],
+      ["Предыдущее видео", "Навори пешина", "Previous video", "Oldingi video"],
+      ["Следующее видео", "Навори навбатӣ", "Next video", "Keyingi video"],
+      ["Номер видео", "Рақами навор", "Video number", "Video raqami"],
+      ["Видео санатория", "Наворҳои осоишгоҳ", "Sanatorium videos", "Sanatoriy videolari"],
+      ["Не удалось загрузить видео.", "Навор бор нашуд.", "The video could not be loaded.", "Videoni yuklab bo‘lmadi."],
+      ["Открыть на YouTube ↗", "Кушодан дар YouTube ↗", "Watch on YouTube ↗", "YouTube’da ochish ↗"],
       ["Имеются противопоказания. Необходима консультация специалиста.", "Зиддинишондодҳо мавҷуданд. Машварати мутахассис зарур аст.", "Contraindications apply. Consultation with a specialist is required.", "Qarshi ko‘rsatmalar mavjud. Mutaxassis maslahati zarur."],
       ["Мессенджеры и соц. сети", "Паёмрасонҳо ва шабакаҳои иҷтимоӣ", "Messengers and social media", "Messenjerlar va ijtimoiy tarmoqlar"],
       ["Коллаж лечебно-оздоровительных процедур", "Коллажи муолиҷаҳои табобатӣ ва солимгардонӣ", "Therapeutic and wellness treatments collage", "Davolash va sog‘lomlashtirish muolajalari kollaji"],
