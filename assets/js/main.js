@@ -2190,8 +2190,12 @@
 
     async function copyTextToClipboard(value) {
       if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(value);
-        return;
+        try {
+          await navigator.clipboard.writeText(value);
+          return;
+        } catch (error) {
+          // Some browsers deny Clipboard API access; try the existing fallback.
+        }
       }
 
       const field = document.createElement("textarea");
@@ -2200,23 +2204,34 @@
       field.style.position = "fixed";
       field.style.left = "-9999px";
       document.body.appendChild(field);
-      field.select();
-      const copied = document.execCommand("copy");
-      field.remove();
-      if (!copied) {
-        throw new Error("copy failed");
+      const activeElement = document.activeElement;
+      try {
+        field.select();
+        field.setSelectionRange(0, value.length);
+        if (!document.execCommand("copy")) {
+          throw new Error("copy failed");
+        }
+      } finally {
+        field.remove();
+        if (activeElement && typeof activeElement.focus === "function") {
+          activeElement.focus({ preventScroll: true });
+        }
       }
     }
 
     document.querySelectorAll("[data-copy-coordinates]").forEach((button) => {
       let resetTimer;
       const status = button.querySelector(".sr-only");
+      const feedback = button.closest(".footer-grid")?.querySelector("[data-copy-status]");
 
       function setCopyButtonState(labelKey, copied = false) {
         button.classList.toggle("is-copied", copied);
         button.setAttribute("aria-label", translate(labelKey));
         if (status) {
           status.textContent = translate(labelKey);
+        }
+        if (feedback) {
+          feedback.textContent = labelKey === "Скопировать координаты" ? "" : translate(labelKey);
         }
       }
 
