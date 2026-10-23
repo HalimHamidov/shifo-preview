@@ -1013,6 +1013,7 @@
       "Координаты: 40°17'00.8\"N 69°49'28.3\"E": "Координатҳо: 40°17'00.8\"N 69°49'28.3\"E",
       "Скопировать": "Нусха гирифтан",
       "Скопировать координаты": "Координатҳоро нусха гиред",
+      "Скопировать номер телефона": "Рақами телефонро нусха гиред",
       "Скопировано": "Нусха шуд",
       "Не удалось скопировать": "Нусха гирифтан нашуд",
       "Открыть в Яндекс.Картах": "Кушодан дар Яндекс.Карты",
@@ -1026,6 +1027,7 @@
       "Координаты: 40°17'00.8\"N 69°49'28.3\"E": "Coordinates: 40°17'00.8\"N 69°49'28.3\"E",
       "Скопировать": "Copy",
       "Скопировать координаты": "Copy coordinates",
+      "Скопировать номер телефона": "Copy phone number",
       "Скопировано": "Copied",
       "Не удалось скопировать": "Could not copy",
       "Открыть в Яндекс.Картах": "Open in Yandex Maps",
@@ -1039,6 +1041,7 @@
       "Координаты: 40°17'00.8\"N 69°49'28.3\"E": "Koordinatalar: 40°17'00.8\"N 69°49'28.3\"E",
       "Скопировать": "Nusxalash",
       "Скопировать координаты": "Koordinatalarni nusxalash",
+      "Скопировать номер телефона": "Telefon raqamini nusxalash",
       "Скопировано": "Nusxalandi",
       "Не удалось скопировать": "Nusxalab bo'lmadi",
       "Открыть в Яндекс.Картах": "Yandex Mapsda ochish",
@@ -2219,9 +2222,10 @@
       }
     }
 
-    document.querySelectorAll("[data-copy-coordinates]").forEach((button) => {
+    document.querySelectorAll("[data-copy-coordinates], [data-copy-text]").forEach((button) => {
       let resetTimer;
       const status = button.querySelector(".sr-only");
+      const defaultLabel = button.dataset.copyLabel || "Скопировать координаты";
       const feedback = button.closest(".footer-grid")?.querySelector("[data-copy-status]");
 
       function setCopyButtonState(labelKey, copied = false) {
@@ -2231,12 +2235,18 @@
           status.textContent = translate(labelKey);
         }
         if (feedback) {
-          feedback.textContent = labelKey === "Скопировать координаты" ? "" : translate(labelKey);
+          const value = button.dataset.copyCoordinates || button.dataset.copyText;
+          if (labelKey !== defaultLabel) {
+            feedback.dataset.copyValue = value;
+            feedback.textContent = translate(labelKey);
+          } else if (feedback.dataset.copyValue === value) {
+            feedback.textContent = "";
+          }
         }
       }
 
       button.addEventListener("click", async () => {
-        const value = button.dataset.copyCoordinates;
+        const value = button.dataset.copyCoordinates || button.dataset.copyText;
         if (!value) return;
 
         try {
@@ -2248,7 +2258,7 @@
 
         window.clearTimeout(resetTimer);
         resetTimer = window.setTimeout(() => {
-          setCopyButtonState("Скопировать координаты", false);
+          setCopyButtonState(defaultLabel, false);
         }, 1800);
       });
     });
