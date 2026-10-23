@@ -73,3 +73,7 @@
 
 /* Preserve social links in the final footer grid column after moving the notice. */
 .footer-bottom > .footer-social { grid-column: -2; }
+
+/* Keep the email contact readable within the wrapping social links. */
+.footer-social-links .footer-email { max-width: 100%; min-width: 0; }
+.footer-email > span { min-width: 0; overflow-wrap: anywhere; }
